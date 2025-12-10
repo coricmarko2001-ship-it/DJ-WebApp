@@ -1,0 +1,311 @@
+ table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table th, table td {
+            color: white;
+            padding: 10px;
+            text-align: left;
+        }
+
+        table th {
+            background-color: #da9e41;
+        }
+
+        table tr:nth-child(even) {
+            background-color: #fcce52;
+        }
+
+        table tr:nth-child(odd) {
+            background-color: #fcce52;
+        }
+
+        .action-buttons button {
+            padding: 5px 10px;
+            margin: 2px;
+            border: none;
+            cursor: pointer;
+            color: white;
+        }
+
+        .edit-button {
+            background-color: #4CAF50;
+        }
+
+        .delete-button {
+            background-color: #f44336;
+        }
+
+        .edit-button:hover {
+            background-color: #45a049;
+        }
+
+        .delete-button:hover {
+            background-color: #e53935;
+        }
+
+
+body, h1, h2, p, ul {
+  margin: 0;
+  padding: 0;
+}
+h1{
+	font-size:35px;
+}
+
+
+body {
+  background-color: #f2f2f2;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+
+header {
+  background-color: #000000;
+  color: #fff;
+  padding: 25px;
+  text-align: center;
+}
+
+header .title-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px; 
+}
+
+header .title-row h1 {
+  font-size: 48px; 
+}
+
+header .nav-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body {
+    background-image: url('background-slika.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed; 
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 20px; 
+}
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+
+nav ul {
+  justify-content: center;
+}
+
+
+section {
+  flex: 1;
+  padding: 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+section h3 {
+	font-size:30px;
+	color: #ff8426;
+
+}
+
+
+section h2 {
+  font-size: 37px;
+  margin-bottom: 20px;
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+section h4 {
+	font-size:35px;
+	color: #fff;
+
+}
+
+section label {
+	font-size:20px;
+	color: #fff;
+
+}
+
+section p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+  color: #f5dd29;
+}
+
+
+footer {
+  background-color: #000000;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+footer p {
+  font-size: 14px;
+}
+
+
+@media (max-width: 768px) {
+  header {
+    padding: 10px;
+  }
+
+  header h1 {
+    font-size: 22px;
+  }
+
+  nav ul li {
+    margin-right: 10px;
+  }
+
+  nav ul li a {
+    font-size: 16px;
+  }
+
+  section {
+    padding: 20px;
+  }
+
+  section h2 {
+    font-size: 20px;
+  }
+
+  section p {
+    font-size: 16px;
+  }
+
+  footer {
+    padding: 15px;
+  }
+
+  footer p {
+    font-size: 12px;
+  }
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.gallery {
+  display: flex;
+}
+
+.gallery img {
+  margin: 10px;
+}
+
+
+.contentlogin {
+    background-color: rgba(0, 0, 0, 0);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 181px 0;
+}
+
+.label{
+	display: inline-block;
+}
+
+.lblun{
+	margin-right: 20px;
+}
+
+.lblpass{
+	margin-right: 89px;
+}
+
+.divButton{
+	padding: 20px;
+}
+
+.logintext{
+	padding: 30px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #333;
+}
+
+.btnlogin {
+    display: inline-block;
+    padding: 10px 50px;
+    cursor: pointer;
+    background: #234cb4;
+    color: #fff;
+    border: 2px solid #234cb4;
+    border-radius: 5px;
+}
+
+.linkpass {
+	text-decoration: underline;
+	color: blue;
+	cursor: pointer;
+}
+
+.error {
+   background: #F2DEDE;
+   color: #A94442;
+   padding: 10px;
+   width: 95%;
+   border-radius: 5px;
+   margin: 20px auto;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 70px;
+  transform: scale(1.5); 
+}
+
+.btnregistracija {
+    display: inline-block;
+    padding: 10px 70px;
+    cursor: pointer;
+    background: #234cb4;
+    color: #fff;
+    border: 2px solid #234cb4;
+    border-radius: 5px;
+}
+
+
+
+
