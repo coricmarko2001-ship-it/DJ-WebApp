@@ -81,11 +81,11 @@ Korisnik bira tip prijave:
 ### 📅 6. Rezervacija DJ nastupa (process_form.php)
 Korisnik ispunjava:
 - Email 
-- Mjesto (dinamički popunjen **combobox** iz baze 'mjesto')
-- Tip događaja (combobox iz baze 'dogadjaji')
+- Mjesto (dinamički popunjen **combobox** iz baze `mjesto`)
+- Tip događaja (combobox iz baze `dogadjaji`)
 - Datum (jQuery UI datepicker)
 Nakon slanja forme:
-- rezervacija se upisuje u tabelu 'rezervacije'
+- rezervacija se upisuje u tabelu `rezervacije`
 - korisnik dobija potvrdu o rezervaciji
 
 
