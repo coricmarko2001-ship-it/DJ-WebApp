@@ -59,7 +59,7 @@ U projektu se nalazi i eksportovana baza dj.sql (za jednostavnu instalaciju).
    -Facebook
    -Instagram
    -Email
-- Klik na ikonicu vodi direktno na tvoje profile
+- Klik na ikonicu vodi direktno na JayD profile
 
 ---
 
@@ -78,11 +78,11 @@ Korisnik bira tip prijave:
 - Nakon logovanja, korisnik vidi stranicu za rezervaciju DJ-a
 ---
 
-### 📅 6. Rezervacija DJ nastupa (process_form.php)
+### 📅 6. Rezervacija DJ nastupa (afterlogin.php)
 Korisnik ispunjava:
 - Email 
 - Mjesto (dinamički popunjen **combobox** iz baze `mjesto`)
-- Tip događaja (combobox iz baze `dogadjaji`)
+- Tip događaja (**combobox** iz baze `dogadjaji`)
 - Datum (jQuery UI datepicker)
 Nakon slanja forme:
 - rezervacija se upisuje u tabelu `rezervacije`
