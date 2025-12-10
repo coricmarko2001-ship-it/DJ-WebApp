@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Događaji - DJ Jay D</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <header>
+    <h1>Jay D</h1>
+    <nav>
+      <ul>
+        <li><a href="jayd.html">Početna</a></li>
+        <li><a href="events.php">Događaji</a></li>
+        <li><a href="gallery.html">Galerija</a></li>
+        <li><a href="contact.html">Kontakt</a></li>
+        <li><a href="prelogin.php">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="social">
+    <div id="social-icons" class="social-icons">s
+      <a href="https://www.instagram.com/your_instagram_username" target="_blank"><i class="fab fa-instagram fa-3x"></i></a>
+      <a href="https://www.facebook.com/your_facebook_page" target="_blank"><i class="fab fa-facebook fa-3x"></i></a>
+      <a href="mailto:dj.jayd23@gmail.com?subject=New%20Mail" target="_blank"><i class="far fa-envelope fa-3x"></i></a>
+    </div>
+  </section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelector('footer').innerHTML = `<p>&copy; ${new Date().getFullYear()} DJ Jay D. Sva prava zadržava.</p>`;
+    
+    
+    document.querySelectorAll('.social-icons a').forEach(icon => {
+	  icon.style.color = 'blue';
+      icon.onmouseenter = () => icon.style.color = 'red';
+      icon.onmouseleave = () => icon.style.color = 'white';
+    });
+  });
+</script>
+
+  <footer>
+    <p>&copy; 2023 DJ Jay D. Sva prava zadržava.</p>
+  </footer>
+</body>
+</html>

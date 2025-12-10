@@ -1,0 +1,84 @@
+<?php
+
+@include 'process_login.php';
+
+session_start();
+
+if(isset($_POST['login'])){
+    
+   $username = $_POST['username'];
+   $pass = $_POST['password'];
+
+   $select = " SELECT * FROM korisnik WHERE username = '$username' && password = '$pass'";
+
+   $result = mysqli_query($conn, $select);
+
+   if(mysqli_num_rows($result) > 0){
+      $_SESSION['username'] = $username;
+      header('location:afterlogin.html');
+	  exit();
+   }else{
+      $error[] = 'Incorrect password or username.';
+   }
+
+}
+
+?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Events - DJ Jay D</title>
+  <link rel="stylesheet" href="styles.css">
+  
+</head>
+<body>
+  <header>
+    <h1>Jay D</h1>
+    <nav>
+      <ul>
+        <li><a href="jayd.html">Home</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+		<li><a href="login.php">Login</a></li>
+      </ul>
+    </nav>
+
+  </header>
+  <section class="contentlogin">
+  <div class="container">
+    <div class="card text-center">
+      <h2 class="logintext">Login</h2>
+      <p>To download new remixes, login to the page !</p> 
+      <form action="" method="post">
+        <label class="lblun">Username</label>
+        <input type="text" name="username" placeholder><br>
+        <label class="lblpass">Password</label>
+        <input type="password" name="password" placeholder><br>
+        <div class="divButton">
+          <button class="btnlogin" name="login" type="submit">Login</button>
+        </div>
+        
+        <?php 
+        if (isset($error)) {
+          foreach($error as $error){
+        ?>
+        <p class="error">
+          <?php echo $error; ?>
+        </p>
+        <?php } }
+        ?>
+      </form>  
+    </div>
+  </div>
+</section>
+
+	
+	 <footer>
+    <p>&copy; 2023 DJ Jay D. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>
