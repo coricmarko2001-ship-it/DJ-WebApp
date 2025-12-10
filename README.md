@@ -15,6 +15,12 @@ Izrađeno u HTML, CSS, PHP, MySQL okruženju uz WAMP server.
 
 ---
 
+## 🖥️ Interaktivni elementi (JavaScript)
+- Dinamičko ažuriranje trenutne godine u footer-u
+- Hover efekti na ikonice društvenih mreža u kontakt sekciji
+
+---
+
 ## 🗄️ Struktura baze podataka
 
 Aplikacija koristi MySQL bazu sa sljedećim tabelama:
