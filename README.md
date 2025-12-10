@@ -73,7 +73,7 @@ Korisnik bira tip prijave:
    -obrisati korisnika
    -izmijeniti korisničke podatke
   
-  **Korisnički login**
+**Korisnički login**
 - Registracija i prijava korisnika
 - Nakon logovanja, korisnik vidi stranicu za rezervaciju DJ-a
 ---
