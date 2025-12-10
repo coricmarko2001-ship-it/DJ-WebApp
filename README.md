@@ -88,9 +88,4 @@ Nakon slanja forme:
 - rezervacija se upisuje u tabelu 'rezervacije'
 - korisnik dobija potvrdu o rezervaciji
 
----
-
-## 📸 Screenshots
-
-Ovde možeš dodati slike kada ih ubaciš u GitHub:
 
